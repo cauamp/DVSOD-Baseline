@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --time=00:5:00          # Time limit (HH:MM:SS) 
 #SBATCH --output=result-%j.out   # Output file name 
-#SBATCH --error=gpu_test_%j.err
-#SBATCH --job-name=caua_qwen_test_job   # Name of the job
+#SBATCH --error=err_%j.err
+#SBATCH --job-name=caua_dvsod-test   # Name of the job
 
 #SBATCH --account=def-vislearn
 
 #SBATCH --mem=128G                 # Request 128GB of memory
-#SBATCH --cpus-per-task=4        # Request CPU core
-#SBATCH --gpus-per-node=1         # Request GPU per node
+#SBATCH --cpus-per-task=32        # Request CPU core
+#SBATCH --gpus-per-node=2         # Request GPU per node
 
 # 1. Load the same modules you used to create the env
 module load python/3.11
@@ -18,4 +18,4 @@ module load python/3.11
 conda activate dvsod
 
 # 3. Run your python script
-python ~/projects/def-vislearn/caua/DVSOD-Baseline/train.py
+python ~/projects/def-vislearn/caua/DVSOD-Baseline/test.py
