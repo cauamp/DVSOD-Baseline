@@ -7,8 +7,8 @@
 #SBATCH --account=def-vislearn
 
 #SBATCH --mem=128G                 # Request 128GB of memory
-#SBATCH --cpus-per-task=32        # Request CPU core
-#SBATCH --gpus-per-node=2         # Request GPU per node
+#SBATCH --cpus-per-task=16      # Request CPU core
+#SBATCH --gpus-per-node=1         # Request GPU per node
 
 module purge # Clear all loaded modules
 
