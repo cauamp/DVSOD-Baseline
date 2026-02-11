@@ -10,11 +10,14 @@
 #SBATCH --cpus-per-task=32        # Request CPU core
 #SBATCH --gpus-per-node=2         # Request GPU per node
 
+module purge # Clear all loaded modules
+
 # 1. Load the same modules you used to create the env
 module load python/3.11
 
 # 2. Activate your virtual environment
 # source /home/caua/projects/def-vislearn/cauamp/qwen/bin/activate
+source ~/miniconda3/etc/profile.d/conda.sh
 conda activate dvsod
 
 # 3. Run your python script
