@@ -17,7 +17,7 @@ cudnn.benchmark = True
 # Train_setup = [0, False, True]    # without temporal cues
 Train_setup = [0, False, False]  # the DVSOD baseline
 
-videos_ROOT = "~/projects/def-vislearn/datasets/DVSOD/"
+videos_ROOT = "~/projects/def-vislearn/datasets/DViSal_dataset/"
 ckpt_path = "~/projects/def-vislearn/caua/DVSOD-Baseline/model.pth.best/"
 val_setName = "val"
 
