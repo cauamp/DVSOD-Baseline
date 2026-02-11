@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --time=00:5:00          # Time limit (HH:MM:SS) 
+#SBATCH --time=00:50:00          # Time limit (HH:MM:SS) 
 #SBATCH --output=result-%j.out   # Output file name 
 #SBATCH --error=err_%j.err
 #SBATCH --job-name=caua_dvsod-test   # Name of the job
