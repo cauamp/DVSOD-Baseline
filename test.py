@@ -80,8 +80,8 @@ if __name__ == "__main__":
     interval = [cfg.win_size - 1, 0]
     assert len(interval) == 2 and interval[0] >= 0 and interval[1] >= 0
 
-    videos_ROOT = "~/projects/def-vislearn/datasets/DViSal_dataset/"
-    ckpt_path = "~/projects/def-vislearn/caua/DVSOD-Baseline/model.pth.best/"
+    videos_ROOT = "/home/caua/projects/def-vislearn/datasets/DViSal_dataset/"
+    ckpt_path = "/home/caua/projects/def-vislearn/caua/DVSOD-Baseline/model.pth.best/"
 
     ckpt_name = "best"  # specify ckpt name, 'best'+.pth
     test_name = "test_all"  # specify testset, e.g., test_DET, test_track3D

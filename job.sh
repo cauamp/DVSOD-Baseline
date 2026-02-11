@@ -21,4 +21,4 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate dvsod
 
 # 3. Run your python script
-~/miniconda3/envs/dvsod/bin/python ~/projects/def-vislearn/caua/DVSOD-Baseline/test.py
+python ~/projects/def-vislearn/caua/DVSOD-Baseline/test.py
